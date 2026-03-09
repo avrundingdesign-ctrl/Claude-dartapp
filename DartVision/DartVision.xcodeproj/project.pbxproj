@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* DartVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
+		A10002 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
+		A10003 /* ServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
+		A10004 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
+		A10005 /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
+		A10006 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006; };
+		A10007 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007; };
+		A10008 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
+		A10009 /* DartTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009; };
+		A10010 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010; };
+		A10011 /* AnalogGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011; };
+		A10012 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012; };
+		A10013 /* VisionGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013; };
+		A10014 /* PlayerScoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10014; };
+		A10015 /* CurrentThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015; };
+		A10016 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016; };
+		A10017 /* CalibrationOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017; };
+		A10018 /* GameControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018; };
+		A10019 /* ScoreCorrectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019; };
+		A10020 /* WinOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020; };
+		A10021 /* PlayerSetupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021; };
+		A10022 /* GameSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022; };
+		A10023 /* AnalogGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023; };
+		A10024 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10024; };
+		A10025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10025; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10001 /* DartVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartVisionApp.swift; sourceTree = "<group>"; };
+		B10002 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		B10003 /* ServerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModels.swift; sourceTree = "<group>"; };
+		B10004 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		B10005 /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
+		B10006 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B10007 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		B10008 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		B10009 /* DartTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartTracker.swift; sourceTree = "<group>"; };
+		B10010 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		B10011 /* AnalogGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogGameViewModel.swift; sourceTree = "<group>"; };
+		B10012 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B10013 /* VisionGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionGameView.swift; sourceTree = "<group>"; };
+		B10014 /* PlayerScoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreList.swift; sourceTree = "<group>"; };
+		B10015 /* CurrentThrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThrowView.swift; sourceTree = "<group>"; };
+		B10016 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		B10017 /* CalibrationOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationOverlay.swift; sourceTree = "<group>"; };
+		B10018 /* GameControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlsView.swift; sourceTree = "<group>"; };
+		B10019 /* ScoreCorrectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCorrectionView.swift; sourceTree = "<group>"; };
+		B10020 /* WinOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinOverlayView.swift; sourceTree = "<group>"; };
+		B10021 /* PlayerSetupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupButton.swift; sourceTree = "<group>"; };
+		B10022 /* GameSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsButton.swift; sourceTree = "<group>"; };
+		B10023 /* AnalogGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogGameView.swift; sourceTree = "<group>"; };
+		B10024 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B10025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		P10001 /* DartVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DartVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10001 = {
+			isa = PBXGroup;
+			children = (
+				G10002 /* DartVisionApp */,
+				G10099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10002 /* DartVisionApp */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* DartVisionApp.swift */,
+				G10003 /* Models */,
+				G10004 /* Services */,
+				G10005 /* ViewModels */,
+				G10006 /* Views */,
+				G10010 /* Theme */,
+				B10025 /* Assets.xcassets */,
+			);
+			path = DartVisionApp;
+			sourceTree = "<group>";
+		};
+		G10003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10002 /* GameModels.swift */,
+				B10003 /* ServerModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G10004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B10004 /* CameraService.swift */,
+				B10005 /* MotionService.swift */,
+				B10006 /* NetworkService.swift */,
+				B10007 /* SpeechService.swift */,
+				B10008 /* PhotoLibraryService.swift */,
+				B10009 /* DartTracker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G10005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10010 /* GameViewModel.swift */,
+				B10011 /* AnalogGameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G10006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B10012 /* MainTabView.swift */,
+				G10007 /* Setup */,
+				G10008 /* Game */,
+				G10009 /* Analog */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G10007 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				B10021 /* PlayerSetupButton.swift */,
+				B10022 /* GameSettingsButton.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		G10008 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B10013 /* VisionGameView.swift */,
+				B10014 /* PlayerScoreList.swift */,
+				B10015 /* CurrentThrowView.swift */,
+				B10016 /* CameraPreviewView.swift */,
+				B10017 /* CalibrationOverlay.swift */,
+				B10018 /* GameControlsView.swift */,
+				B10019 /* ScoreCorrectionView.swift */,
+				B10020 /* WinOverlayView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		G10009 /* Analog */ = {
+			isa = PBXGroup;
+			children = (
+				B10023 /* AnalogGameView.swift */,
+			);
+			path = Analog;
+			sourceTree = "<group>";
+		};
+		G10010 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B10024 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		G10099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P10001 /* DartVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10001 /* DartVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10003;
+			buildPhases = (
+				S10001 /* Sources */,
+				F10001 /* Frameworks */,
+				R10001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DartVision;
+			productName = DartVision;
+			productReference = P10001;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PR0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					T10001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C10001;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				Base,
+			);
+			mainGroup = G10001;
+			productRefGroup = G10099;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10001 /* DartVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10025 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* DartVisionApp.swift in Sources */,
+				A10002 /* GameModels.swift in Sources */,
+				A10003 /* ServerModels.swift in Sources */,
+				A10004 /* CameraService.swift in Sources */,
+				A10005 /* MotionService.swift in Sources */,
+				A10006 /* NetworkService.swift in Sources */,
+				A10007 /* SpeechService.swift in Sources */,
+				A10008 /* PhotoLibraryService.swift in Sources */,
+				A10009 /* DartTracker.swift in Sources */,
+				A10010 /* GameViewModel.swift in Sources */,
+				A10011 /* AnalogGameViewModel.swift in Sources */,
+				A10012 /* MainTabView.swift in Sources */,
+				A10013 /* VisionGameView.swift in Sources */,
+				A10014 /* PlayerScoreList.swift in Sources */,
+				A10015 /* CurrentThrowView.swift in Sources */,
+				A10016 /* CameraPreviewView.swift in Sources */,
+				A10017 /* CalibrationOverlay.swift in Sources */,
+				A10018 /* GameControlsView.swift in Sources */,
+				A10019 /* ScoreCorrectionView.swift in Sources */,
+				A10020 /* WinOverlayView.swift in Sources */,
+				A10021 /* PlayerSetupButton.swift in Sources */,
+				A10022 /* GameSettingsButton.swift in Sources */,
+				A10023 /* AnalogGameView.swift in Sources */,
+				A10024 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C10D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C10R01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DartVision benötigt Kamerazugriff um das Dartboard zu erkennen.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "DartVision speichert aufgenommene Fotos in der Fotos-App.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_NSAppTransportSecurity = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dartvision.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C10R02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DartVision benötigt Kamerazugriff um das Dartboard zu erkennen.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "DartVision speichert aufgenommene Fotos in der Fotos-App.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_NSAppTransportSecurity = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dartvision.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10001 /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10D01 /* Debug */,
+				C10R01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10003 /* Build configuration list for PBXNativeTarget */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10D02 /* Debug */,
+				C10R02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = PR0001 /* Project object */;
+}

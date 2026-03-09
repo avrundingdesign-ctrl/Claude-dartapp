@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>DartVision benötigt Kamerazugriff um das Dartboard zu erkennen.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>DartVision speichert aufgenommene Fotos in der Fotos-App.</string>
+</dict>
+</plist>
