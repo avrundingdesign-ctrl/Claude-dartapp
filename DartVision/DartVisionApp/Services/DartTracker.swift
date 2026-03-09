@@ -5,8 +5,9 @@ import CoreGraphics
 enum DartMergeResult {
     /// No changes detected — same darts as before
     case unchanged
-    /// New darts were added in this round
-    case newDarts([DartData])
+    /// New darts were added in this round.
+    /// `allDarts` = complete history, `newIndices` = indices of newly added darts
+    case newDarts(allDarts: [DartData], newIndices: [Int])
 }
 
 /// Tracks darts across frames, deduplicates by position, manages rounds of 3 darts
@@ -22,8 +23,6 @@ final class DartTracker: ObservableObject {
     /// Merges server-detected darts with local tracking.
     /// Returns new darts or signals an unchanged round.
     func merge(with newDarts: [DartData], isBusted: Bool) -> DartMergeResult {
-        let countBefore = history.count
-
         // If board is empty after a full round, reset
         if newDarts.isEmpty && history.count == maxDarts {
             reset()
@@ -45,6 +44,9 @@ final class DartTracker: ObservableObject {
             currentRoundScores = []
         }
 
+        // Capture start index AFTER any potential reset
+        let startIndex = history.count
+
         // Add new unique darts
         for newDart in newDarts {
             guard history.count < maxDarts else { break }
@@ -62,11 +64,14 @@ final class DartTracker: ObservableObject {
 
         currentRoundScores = history.map(\.score)
 
-        if history.count == countBefore {
+        // Build indices of newly added darts
+        let newIndices = Array(startIndex..<history.count)
+
+        if newIndices.isEmpty {
             return .unchanged
         }
 
-        return .newDarts(history)
+        return .newDarts(allDarts: history, newIndices: newIndices)
     }
 
     func reset() {

@@ -227,17 +227,16 @@ final class GameViewModel: ObservableObject {
         }
 
         // Process darts
-        let countBefore = dartTracker.historyCount
         let result = dartTracker.merge(with: response.darts, isBusted: isBusted)
 
         switch result {
         case .unchanged:
             print("📊 Keine neuen Darts erkannt.")
 
-        case .newDarts(let allDarts):
-            for i in countBefore..<allDarts.count {
+        case .newDarts(let allDarts, let newIndices):
+            for i in newIndices where i < allDarts.count {
                 let dart = allDarts[i]
-                let dartNumber = i + 1
+                let dartNumber = i + 1  // 1-based position in round
 
                 if dartNumber < 3 {
                     // Dart 1 or 2: process intermediate throw
