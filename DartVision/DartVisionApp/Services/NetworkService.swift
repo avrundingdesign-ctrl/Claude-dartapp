@@ -5,7 +5,7 @@ import UIKit
 final class NetworkService {
     private let serverURL: URL
 
-    init(serverURL: URL = URL(string: "http://192.168.178.106:5000/upload")!) {
+    init(serverURL: URL = URL(string: "http://192.168.178.119:5000/upload")!) {
         self.serverURL = serverURL
     }
 
