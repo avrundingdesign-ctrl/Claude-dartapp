@@ -6,10 +6,22 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>DartVision benötigt Kamerazugriff um das Dartboard zu erkennen.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>DartVision speichert aufgenommene Fotos in der Fotos-App.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>DartVision benötigt Zugriff auf die Fotomediathek.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>DartVision verbindet sich mit dem lokalen Dart-Erkennungsserver.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_http._tcp</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>DartVision benötigt Mikrofonzugriff für die Sprachausgabe.</string>
 </dict>
 </plist>

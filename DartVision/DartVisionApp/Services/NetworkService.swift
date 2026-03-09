@@ -51,7 +51,15 @@ final class NetworkService {
             }
         }
 
-        let decoded = try JSONDecoder().decode(ServerResponse.self, from: data)
+        let decoded: ServerResponse
+        do {
+            decoded = try JSONDecoder().decode(ServerResponse.self, from: data)
+        } catch {
+            let raw = String(data: data, encoding: .utf8) ?? "nicht lesbar"
+            print("⚠️ JSON-Decode-Fehler: \(error)")
+            print("📄 Rohdaten: \(raw.prefix(500))")
+            throw error
+        }
         return decoded
     }
 }

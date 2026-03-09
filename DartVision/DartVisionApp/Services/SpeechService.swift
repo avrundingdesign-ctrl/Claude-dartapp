@@ -26,7 +26,7 @@ final class SpeechService: NSObject, ObservableObject {
 
     private func prepareAudio() {
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(.playback, options: [.duckOthers, .defaultToSpeaker])
+        try? session.setCategory(.playAndRecord, options: [.duckOthers, .defaultToSpeaker, .allowBluetooth])
         try? session.setActive(true, options: .notifyOthersOnDeactivation)
     }
 }
