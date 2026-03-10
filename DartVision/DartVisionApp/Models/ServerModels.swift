@@ -46,9 +46,9 @@ struct DartData: Codable, Identifiable {
     let y: CGFloat
     let score: Int
     let field_type: String
-
+    let confidence: Double
     private enum CodingKeys: String, CodingKey {
-        case x, y, score, field_type
+        case x, y, score, field_type, confidence
     }
 
     init(from decoder: Decoder) throws {
@@ -70,5 +70,6 @@ struct DartData: Codable, Identifiable {
         }
         self.score = (try? container.decode(Int.self, forKey: .score)) ?? 0
         self.field_type = (try? container.decode(String.self, forKey: .field_type)) ?? "miss"
+        self.confidence = (try? container.decode(Double.self, forKey: .confidence)) ?? 0.0
     }
 }

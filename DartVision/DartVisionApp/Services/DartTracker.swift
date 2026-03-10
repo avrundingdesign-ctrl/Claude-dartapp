@@ -15,7 +15,8 @@ final class DartTracker: ObservableObject {
     private var history: [DartData] = []
     private let tolerance: CGFloat = 20.0
     private var maxDarts = 3
-
+    
+    
     @Published var currentRoundScores: [Int] = []
 
     var historyCount: Int { history.count }
@@ -49,9 +50,9 @@ final class DartTracker: ObservableObject {
 
         // Capture start index AFTER any potential reset
         let startIndex = history.count
-
+        let sortedNewDarts = newDarts.sorted { $0.confidence > $1.confidence }
         // Add new unique darts
-        for newDart in newDarts {
+        for newDart in sortedNewDarts {
             guard history.count < maxDarts else { break }
 
             let isDuplicate = history.contains { old in
