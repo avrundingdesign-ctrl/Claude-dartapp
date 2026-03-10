@@ -14,7 +14,7 @@ enum DartMergeResult {
 final class DartTracker: ObservableObject {
     private var history: [DartData] = []
     private let tolerance: CGFloat = 20.0
-    private let maxDarts = 3
+    private var maxDarts = 3
 
     @Published var currentRoundScores: [Int] = []
 
@@ -30,6 +30,9 @@ final class DartTracker: ObservableObject {
 
         // If current round is full or busted, check if it's the same round
         if history.count == maxDarts || isBusted {
+            if isBusted{
+                maxDarts = history.count
+            }
             let sameRound = newDarts.contains { newDart in
                 history.contains { old in
                     hypot(old.x - newDart.x, old.y - newDart.y) < tolerance
@@ -78,5 +81,6 @@ final class DartTracker: ObservableObject {
         print("🗑️ DartTracker reset.")
         history.removeAll()
         currentRoundScores = []
+        maxDarts = 3
     }
 }
